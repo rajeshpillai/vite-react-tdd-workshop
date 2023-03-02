@@ -1,6 +1,8 @@
-import { render, fireEvent } from "@testing-library/react";
-import { describe, it, expect } from "vitest";
-import "@testing-library/jest-dom";
+// import { render, fireEvent } from "@testing-library/react";
+// import { describe, it, expect } from "vitest";
+// import "@testing-library/jest-dom";
+
+import { render, screen, within, fireEvent } from "../../utils/test-utils";
 
 import { Dialog } from ".";
 

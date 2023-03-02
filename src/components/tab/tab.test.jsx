@@ -1,5 +1,5 @@
 import { render, screen, within, fireEvent } from "../../utils/test-utils";
-import Tab from ".";
+import Tab from "./tab";
 
 describe("Tab Component", () => {
   it("Should render one tab default", () => {
