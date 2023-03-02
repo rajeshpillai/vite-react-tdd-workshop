@@ -29,11 +29,9 @@ function App() {
           count is {count}
         </button>
       </div>
+      <br></br>
 
-      <DataTab data={TAB_DATA} />
-
-      <div></div>>
-
+      <h2>Compound Tab - Top</h2>
       <Tab.Tabs  onSelectTab = {onSelectTab}>
           <Tab.TabList>
               <Tab>Book Flight</Tab>
@@ -52,6 +50,26 @@ function App() {
         </Tab.TabPanels>
       </Tab.Tabs>
 
+      <h2>Compound Tab - Bottom</h2>
+      <Tab.Tabs  onSelectTab = {onSelectTab}>
+          <Tab.TabPanels>
+            <Tab.TabPanel>
+                Tab 1 - Book flight
+                <div>
+                    Some more content.
+                </div>
+            </Tab.TabPanel>
+            <Tab.TabPanel>Tab 2</Tab.TabPanel>
+        </Tab.TabPanels>
+        <Tab.TabList>
+              <Tab>Admin</Tab>
+              <Tab>Permissions</Tab>
+          </Tab.TabList>
+      </Tab.Tabs>
+
+      <br></br>
+      <h2>Data Tab</h2>
+      <DataTab data={TAB_DATA} />
     </div>
   );
 }
