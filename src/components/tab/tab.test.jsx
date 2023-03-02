@@ -22,6 +22,13 @@ describe("Tab Component", () => {
         </Tab.TabPanels>
       </Tab.Tabs>           
     );
-    expect(screen.getByText(/Book Flight/i)).toBeInTheDocument();
+    expect(screen.getByText(/Book Flight/)).toBeInTheDocument();
+    expect(screen.getByText(/Book Room/)).toBeInTheDocument();
+    expect(screen.getByText(/Book Movie/)).toBeInTheDocument();
+
+    expect(screen.getByText(/Tab 1 - Book flight/)).toBeInTheDocument();
+    expect(screen.queryByText(/Tab 2/)).not.toBeInTheDocument();
+    expect(screen.queryByText(/Tab 3/)).not.toBeInTheDocument();
+    
   });
 });
