@@ -1,0 +1,19 @@
+.tab-container {
+}
+
+.tab-item-group {
+  list-style-type: none;
+  display: flex;
+}
+
+.tab-item {
+  padding: 4px;
+  border: 1px solid black;
+  cursor: pointer;
+}
+
+.tab-content {
+  min-width: 40rem;
+  border: 1px solid #ddd;
+  min-height: 20rem;
+}

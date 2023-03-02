@@ -1,19 +1,14 @@
-.tab-container {
-}
-
-.tab-item-group {
-  list-style-type: none;
+.tab-list {
   display: flex;
+  justify-content: space-around;
 }
-
-.tab-item {
-  padding: 4px;
-  border: 1px solid black;
+.tab {
   cursor: pointer;
 }
 
-.tab-content {
-  min-width: 40rem;
+.panels {
+
+}
+.panel {
   border: 1px solid #ddd;
-  min-height: 20rem;
 }
