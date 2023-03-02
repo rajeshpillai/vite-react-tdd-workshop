@@ -18,7 +18,7 @@ function App() {
   ];
 
   const onSelectTab = (index) => {
-    alert(`Tab clicked ${index}`);
+    console.log(`Tab clicked ${index}`);
   }
 
   return (
@@ -31,6 +31,8 @@ function App() {
       </div>
 
       <DataTab data={TAB_DATA} />
+
+      <div></div>>
 
       <Tab.Tabs  onSelectTab = {onSelectTab}>
           <Tab.TabList>

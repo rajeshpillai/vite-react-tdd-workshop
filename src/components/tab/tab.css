@@ -1,14 +1,25 @@
 .tab-list {
   display: flex;
   justify-content: space-around;
+  width: 30rem;
 }
 .tab {
   cursor: pointer;
+  width: 10rem;
+  padding: 5px;
+  user-select: none;
 }
-
+.tab.active {
+  background-color: pink;
+  border-top-left-radius: 10px;
+}
 .panels {
-
+  border-top: 1px solid #ddd;
+  min-height: 20rem;
 }
 .panel {
-  border: 1px solid #ddd;
+  text-align: left;
+  padding-left: 10px;
+  padding-top: 20px;
 }
+

@@ -62,12 +62,16 @@ function TabPanel(props) {
 }
 
 function Tab(props) {
+
+  console.log("Tab: ", props.isActive);
   const onSelect = () => {
     props.onSelectTab(props.index);
   }
 
+  const css = props.isActive ? "tab active" : "tab";
+
   return (
-    <div className = "tab" onClick = {onSelect}>
+    <div className = {css} onClick = {onSelect}>
         {props.children}
     </div>
   )
