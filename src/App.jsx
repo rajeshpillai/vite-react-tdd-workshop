@@ -62,8 +62,14 @@ function App() {
       </Tab.Tabs>
 
       <br></br>
-      <h2>Data Tab</h2>
+      <h2>Data Tab - Bottom</h2>
       <DataTab data={TAB_DATA} tab_alignment="bottom" />
+
+      <h2>Data Tab - Left</h2>
+      <DataTab data={TAB_DATA} tab_alignment="left" />
+
+      <h2>Data Tab - Right</h2>
+      <DataTab data={TAB_DATA} tab_alignment="right" />
 
       <br></br>
       <h2>Simple Tab</h2>

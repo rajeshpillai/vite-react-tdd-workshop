@@ -17,11 +17,11 @@ export default function DataTab(props) {
         </Tab.TabPanels>
     );
 
-    const comps = props.tab_alignment === "top" 
+    const comps = props.tab_alignment === "top"  || props.tab_alignment === "left"
     ? [tabList, tabPanels] 
     : [tabPanels, tabList];
     return (
-        <Tab.Tabs>
+        <Tab.Tabs tab_alignment={props.tab_alignment}>
          {comps}
         </Tab.Tabs>
     );

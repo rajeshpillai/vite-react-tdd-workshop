@@ -5,6 +5,8 @@ function Tabs(props) {
   const [activeIndex, setActiveIndex] = useState(0);
   const onSelectTab = props.onSelectTab || (() => {});
 
+  const tabAlignment = props.tab_alignment || "top";
+
   const handleTabSelection = (index) => {
     setActiveIndex(index);
     onSelectTab(index);
@@ -14,17 +16,19 @@ function Tabs(props) {
     return React.cloneElement(child, {
         isActive: index === activeIndex,
         onSelectTab: handleTabSelection,
-        activeIndex : activeIndex
+        activeIndex : activeIndex,
+        tab_alignment: tabAlignment
     });
   })
   return(
-    <div className = "tab-container">
+    <div className = {`tab-container ${tabAlignment}`}>
       {children}
     </div>
   )
 }
 
 function TabList(props) {
+  const tabAlignment = props.tab_alignment || "top";
   const handleTab = (index) => {
     props.onSelectTab(index);
   }
@@ -38,7 +42,7 @@ function TabList(props) {
     });
   })
   return (
-    <div className = "tab-list">
+    <div className = {`tab-list ${tabAlignment}`}>
         {children}
     </div>
   )
