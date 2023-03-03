@@ -2,7 +2,9 @@ import { useState } from "react";
 import "./App.css";
 
 import SimpleTab from "./components/tab/simple-tab";
-import Tab from "./components/tab/tab";
+import Tab from     "./components/tab/tab";
+import DataTab from "./components/tab/data-tab";
+
 function App() {
   const [count, setCount] = useState(0);
 
@@ -69,6 +71,10 @@ function App() {
 
       <br></br>
       <h2>Data Tab</h2>
+      <DataTab data={TAB_DATA} />
+
+      <br></br>
+      <h2>Simple Tab</h2>
       <SimpleTab data={TAB_DATA} />
     </div>
   );
