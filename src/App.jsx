@@ -6,8 +6,6 @@ import Tab from     "./components/tab/tab";
 import DataTab from "./components/tab/data-tab";
 
 function App() {
-  const [count, setCount] = useState(0);
-
   const TAB_DATA = [
     {
       label: "Personal Details",
@@ -26,12 +24,6 @@ function App() {
   return (
     <div className="App">
       <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-      </div>
-      <br></br>
 
       <h2>Compound Tab - Top</h2>
       <Tab.Tabs  onSelectTab = {onSelectTab}>
