@@ -59,7 +59,9 @@ function App() {
           <option value="right">Right</option>
       </select>
 
-      <br/>
+      <br></br>
+      <br></br>
+
       <DataTab data={TAB_DATA} tab_alignment={alignment} />
     </div>
   );
