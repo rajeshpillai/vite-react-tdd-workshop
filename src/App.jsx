@@ -63,7 +63,7 @@ function App() {
 
       <br></br>
       <h2>Data Tab</h2>
-      <DataTab data={TAB_DATA} />
+      <DataTab data={TAB_DATA} tab_alignment="bottom" />
 
       <br></br>
       <h2>Simple Tab</h2>
