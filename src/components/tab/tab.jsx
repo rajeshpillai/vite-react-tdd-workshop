@@ -46,7 +46,6 @@ function TabList(props) {
 
 function TabPanels(props) {
   const activeIndex = props.activeIndex || 0;
-  console.log({activeIndex});
   return (
     <div className="panels">
         {props.children[activeIndex]}
@@ -62,8 +61,6 @@ function TabPanel(props) {
 }
 
 function Tab(props) {
-
-  console.log("Tab: ", props.isActive);
   const onSelect = () => {
     props.onSelectTab(props.index);
   }

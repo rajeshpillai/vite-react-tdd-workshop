@@ -1,15 +1,15 @@
 import { render, screen, within, fireEvent } from "../../utils/test-utils";
-import Tab from "./data-tab";
+import SimpleTab from "./simple-tab";
 
 describe("Tab Component", () => {
   it("Should render one tab default", () => {
-    render(<Tab />);
+    render(<SimpleTab />);
     expect(screen.getByText(/Tab 1/i)).toBeInTheDocument();
   });
 
   it("Dynamically render tabs passed through props", () => {
     render(
-      <Tab
+      <SimpleTab
         data={[
           { label: "Tab 1", content: "Content 1 goes here" },
           { label: "Tab 2", content: "Content 2 goes here" }
@@ -22,7 +22,7 @@ describe("Tab Component", () => {
 
   it("Default show first tab content", () => {
     render(
-      <Tab
+      <SimpleTab
         data={[
           { label: "Tab 1", content: "Content 1 goes here" },
           { label: "Tab 2", content: "Content 2 goes here" }
@@ -36,7 +36,7 @@ describe("Tab Component", () => {
 
   it("Show toggle tab content on click of tab label", () => {
     render(
-      <Tab
+      <SimpleTab
         data={[
           { label: "Tab 1", content: "Content 1 goes here" },
           { label: "Tab 2", content: "Content 2 goes here" }

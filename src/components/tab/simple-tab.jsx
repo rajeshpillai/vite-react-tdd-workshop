@@ -1,7 +1,7 @@
-import "./data-tab.css";
+import "./simple-tab.css";
 import { useState } from "react";
 
-export default function Tab({
+export default function SimpleTab({
   data = [{ label: "Tab 1", content: "Content 1" }]
 }) {
   const [tab_index, setTabIndex] = useState(0);

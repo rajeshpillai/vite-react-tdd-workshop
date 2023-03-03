@@ -1,7 +1,7 @@
 import { useState } from "react";
 import "./App.css";
 
-import DataTab from "./components/tab/data-tab";
+import SimpleTab from "./components/tab/simple-tab";
 import Tab from "./components/tab/tab";
 function App() {
   const [count, setCount] = useState(0);
@@ -69,7 +69,7 @@ function App() {
 
       <br></br>
       <h2>Data Tab</h2>
-      <DataTab data={TAB_DATA} />
+      <SimpleTab data={TAB_DATA} />
     </div>
   );
 }
