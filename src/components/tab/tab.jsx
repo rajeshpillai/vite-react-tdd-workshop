@@ -18,9 +18,9 @@ function Tabs(props) {
     });
   })
   return(
-    <>
+    <div className = "tab-container">
       {children}
-    </>
+    </div>
   )
 }
 
@@ -54,9 +54,9 @@ function TabPanels(props) {
 }
 function TabPanel(props) {
   return (
-      <div className="panel">
-          {props.children}
-      </div>
+    <div className="panel">
+        {props.children}
+    </div>
   )
 }
 
