@@ -32,11 +32,6 @@ function App() {
 
       <h2>Compound Tab - Top</h2>
       <Tab.Tabs  onSelectTab = {onSelectTab}>
-          <Tab.TabList>
-              <Tab>Book Flight</Tab>
-              <Tab>Book Room</Tab>
-              <Tab>Book Movie</Tab>
-          </Tab.TabList>
           <Tab.TabPanels>
             <Tab.TabPanel>
                 Tab 1 - Book flight
@@ -47,10 +42,15 @@ function App() {
             <Tab.TabPanel>Tab 2</Tab.TabPanel>
             <Tab.TabPanel>Tab 3</Tab.TabPanel>
         </Tab.TabPanels>
+          <Tab.TabList>
+              <Tab>Book Flight</Tab>
+              <Tab>Book Room</Tab>
+              <Tab>Book Movie</Tab>
+          </Tab.TabList>
       </Tab.Tabs>
 
 
-      <h2>Data Tab - Dynamic algnment</h2>
+      <h2>Data Tab - Dynamic alignment</h2>
       <select onChange={handleAlignmentChange}> 
          <option value="⬇️ Select an Alignment ⬇️"> -- Select an Alignment -- </option>
          <option value="top">Top</option>
